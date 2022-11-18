@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block nav %}
+    <li class="nav-item">
+          <a class="btn" aria-current="page" href="{% url 'task_add' %}">Add Task</a>
+        </li>
+{% endblock %}
+{% block content %}
+    <div class="card text-center">
+
+
+          <h5 class="card-header">
+            Zadanie: {{ task.summary }}
+          </h5>
+          <div class="card-body">
+            <p class="card-text" style="white-space: pre-wrap">Opisatie: {{ task.description }} </p>
+            <p class="card-text" style="white-space: pre-wrap">Status: {{ task.status }} </p>
+            <p class="card-text" style="white-space: pre-wrap">Tip: {{ task.type }} </p>
+
+          </div>
+          <div class="card-footer text-muted">
+            Data sozdaniya: {{ task.created_at|date:"d F Y"|default:'-' }}
+          </div>
+          <div class="card-footer text-muted">
+            Obnovlenie: {{ task.updated_at|date:"d F Y"|default:'-' }}
+          </div>
+    </div>
+{% endblock %}
