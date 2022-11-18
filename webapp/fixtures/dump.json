@@ -1,0 +1,122 @@
+[
+{
+  "model": "webapp.trackertype",
+  "pk": 1,
+  "fields": {
+    "title": "Task"
+  }
+},
+{
+  "model": "webapp.trackertype",
+  "pk": 2,
+  "fields": {
+    "title": "Bug"
+  }
+},
+{
+  "model": "webapp.trackertype",
+  "pk": 3,
+  "fields": {
+    "title": "Enhancement"
+  }
+},
+{
+  "model": "webapp.trackerstatus",
+  "pk": 1,
+  "fields": {
+    "title": "New"
+  }
+},
+{
+  "model": "webapp.trackerstatus",
+  "pk": 2,
+  "fields": {
+    "title": "In Progress"
+  }
+},
+{
+  "model": "webapp.trackerstatus",
+  "pk": 3,
+  "fields": {
+    "title": "Done"
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 1,
+  "fields": {
+    "summary": "Sdelat 45 wh",
+    "description": "Sdelat 45 hw polnost'u",
+    "status": 2,
+    "type": 2,
+    "created_at": "2022-11-18T11:15:59.364Z",
+    "updated_at": "2022-11-18T11:15:59.364Z"
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 2,
+  "fields": {
+    "summary": "Sdelat 44 hw",
+    "description": "Sdelat 44 hw polnost'u",
+    "status": 3,
+    "type": 1,
+    "created_at": "2022-11-18T11:16:16.253Z",
+    "updated_at": "2022-11-18T11:16:16.253Z"
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 3,
+  "fields": {
+    "summary": "Sdelat 46 hw",
+    "description": "Sdelat 46 hw polnost'u",
+    "status": 1,
+    "type": 3,
+    "created_at": "2022-11-18T11:16:33.984Z",
+    "updated_at": "2022-11-18T11:16:33.984Z"
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 4,
+  "fields": {
+    "summary": "Sdelat 47 hw",
+    "description": "Sdelat 47 hw polnost'u + bonus",
+    "status": 3,
+    "type": 2,
+    "created_at": "2022-11-18T11:16:57.833Z",
+    "updated_at": "2022-11-18T11:16:57.833Z"
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 5,
+  "fields": {
+    "summary": "Sdelat 48 hw polnost'u",
+    "description": "Sdelat 48 hw polnost'u\r\nSdelat 45 hw polnost'u",
+    "status": 2,
+    "type": 1,
+    "created_at": "2022-11-18T11:17:13.369Z",
+    "updated_at": "2022-11-18T11:17:13.369Z"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$v68RzXkbJknvp3iQx33Tcr$m+Zia/12BlNTpomGyigIMa9k8jIJPq7ROI2M6nPLbio=",
+    "last_login": "2022-11-18T11:11:17.072Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-11-18T11:06:21.449Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

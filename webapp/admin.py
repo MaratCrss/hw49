@@ -3,8 +3,8 @@ from webapp.models import Tracker, TrackerType, TrackerStatus
 # Register your models here.
 
 class TrackerAdmin(admin.ModelAdmin):
-    list_display = ['id', 'summary', 'description']
-    list_filter = ['summary']
+    list_display = ['id', 'summary', 'description', 'created_at', 'updated_at']
+    list_filter = ['created_at']
     exclude = []
 
 class TrackerTypeAdmin(admin.ModelAdmin):
