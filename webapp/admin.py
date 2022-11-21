@@ -18,5 +18,5 @@ class TrackerStatusAdmin(admin.ModelAdmin):
     exclude = []
 
 admin.site.register(Tracker, TrackerAdmin)
-admin.site.register(TrackerStatus, TrackerStatusAdmin)
-admin.site.register(TrackerType, TrackerTypeAdmin)
+admin.site.register(TrackerStatus)
+admin.site.register(TrackerType)

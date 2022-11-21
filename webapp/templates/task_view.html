@@ -12,9 +12,9 @@
             Zadanie: {{ task.summary }}
           </h5>
           <div class="card-body">
-            <p class="card-text" style="white-space: pre-wrap">Opisatie: {{ task.description }} </p>
-            <p class="card-text" style="white-space: pre-wrap">Status: {{ task.status }} </p>
-            <p class="card-text" style="white-space: pre-wrap">Tip: {{ task.type }} </p>
+            <p class="card-text" style="white-space: pre-wrap">Opisatie: {{ task.description.title }} </p>
+            <p class="card-text" style="white-space: pre-wrap">Status: {{ task.status.title }} </p>
+            <p class="card-text" style="white-space: pre-wrap">Tip: {{ task.type.title }} </p>
 
           </div>
           <div class="card-footer text-muted">
@@ -22,6 +22,10 @@
           </div>
           <div class="card-footer text-muted">
             Obnovlenie: {{ task.updated_at|date:"d F Y"|default:'-' }}
+          </div>
+          <div class="card-footer text-muted">
+                <a href="{% url 'task_update' task.pk %}">Update Task</a>
+                <a href="{% url 'task_delete' task.pk %}">Delete Task</a>
           </div>
     </div>
 {% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    <form action="" method="post">
+    {% csrf_token %}
+    <h4>Vy deistvitelno hotite udalit zadachu '{{ task.summary }}'?</h4>
+        <input type="submit" class="btn btn-danger" value="DA">
+        <a href="{% url 'task_view' task.pk %}" class="btn btn-success">NET</a>
+    </form>
+
+{% endblock %}
