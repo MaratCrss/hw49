@@ -18,6 +18,7 @@ class IndexView(TemplateView):
         context = self.get_context_data(**kwargs)
         return self.render_to_response(context)
 
+
 class CreateView(TemplateView):
     template_name = 'create.html'
 
@@ -81,3 +82,4 @@ class DeleteTask(View):
         task = get_object_or_404(Tracker, pk=kwargs['pk'])
         task.delete()
         return redirect('index')
+

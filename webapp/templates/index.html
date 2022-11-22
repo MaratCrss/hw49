@@ -8,14 +8,14 @@
 {% endblock %}
 {% block content %}
     <h1>Задачи:</h1>
-    <form action="" method="post">
+    <form action="" method="POST">
     {% csrf_token %}
-    <input type="submit" class="btn btn-danger" value="Delete">
+    <p><input type="submit" class="btn btn-danger" value="Delete"></p>
         <div class="row">
             {% for task in tasks %}
                 <div class="col-6 mb-3">
                     <div class="card">
-                       <h5 class="card-header"><input type="checkbox" class="form-check-input" name="tasks" value="{{ tasks.pk }}"> Zadacha: <a href="{% url 'task_view' task.pk %}">{{ task.summary.title }}</a></h5>
+                       <h5 class="card-header"><input type="checkbox" class="form-check-input" name="tasks" value="{{ task.pk }}"> Zadacha: <a href="{% url 'task_view' task.pk %}">{{ task.summary.title }}</a></h5>
                        <div class="card-body">
                            <h5 class="card-title">Тип: {% for t in task.type.all %}{{ t}}{% endfor %}</h5>
                            <h5 class="card-title">Статус: {{ task.status }}</h5>
