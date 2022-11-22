@@ -14,7 +14,7 @@
           <div class="card-body">
             <p class="card-text" style="white-space: pre-wrap">Opisatie: {{ task.description.title }} </p>
             <p class="card-text" style="white-space: pre-wrap">Status: {{ task.status.title }} </p>
-            <p class="card-text" style="white-space: pre-wrap">Tip: {{ task.type.title }} </p>
+            <p class="card-text" style="white-space: pre-wrap">Tip: {% for t in task.type.all %}{{ t}}{% endfor %} </p>
 
           </div>
           <div class="card-footer text-muted">

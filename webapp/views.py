@@ -28,9 +28,12 @@ class CreateView(TemplateView):
     def post(self, request, *args, **kwargs):
         form = TrackerForm(data=request.POST)
         if form.is_valid():
+            types = form.cleaned_data.pop('type')
             task = Tracker.objects.create(**form.cleaned_data)
+            task.type.set(types)
             return redirect('task_view', pk=task.pk)
         else:
+            # return render(request, 'create.html', {'form': form})
             context = self.get_context_data(**kwargs)
             context['form'] = form
             return self.render_to_response(context)
@@ -52,9 +55,10 @@ class UpdateTask(View):
             'summary': task.summary,
             'description': task.description,
             'status': task.status,
-            'type': task.type,
+            'type': task.type.all(),
         })
-        return render(request, 'update.html', {'form': form, 'task': task})
+        return render(request, 'update.html', {'form': form})
+
     def post(self, request, *args, **kwargs):
         task = get_object_or_404(Tracker, pk=kwargs['pk'])
         form = TrackerForm(data=request.POST)
@@ -62,11 +66,11 @@ class UpdateTask(View):
             task.summary = form.cleaned_data['summary']
             task.description = form.cleaned_data['description']
             task.status = form.cleaned_data['status']
-            task.type = form.cleaned_data['type']
             task.save()
+            task.type.set(form.cleaned_data['type'])
             return redirect('task_view', pk=task.pk)
         else:
-            return render(request, 'update.html', {'form': form, 'task': task})
+            return render(request, 'update.html', {'form': form})
 
 
 class DeleteTask(View):
