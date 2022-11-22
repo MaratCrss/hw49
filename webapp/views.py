@@ -33,7 +33,6 @@ class CreateView(TemplateView):
             task.type.set(types)
             return redirect('task_view', pk=task.pk)
         else:
-            # return render(request, 'create.html', {'form': form})
             context = self.get_context_data(**kwargs)
             context['form'] = form
             return self.render_to_response(context)
