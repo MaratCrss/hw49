@@ -2,10 +2,14 @@
 ---------------
 
 from datetime import timedelta
+from django.utils import timezone
+from django.db.models import Q
 
-q_1 = Q(updated_at__gt=datetime.now - timedelta(days=30))
-q_2 = Q(status__title__iexact='done')
+
+q_1 = Q(updated_at__gte=timezone.now() - timedelta(days=30))
+q_2 = Q(status=3)
 Tracker.objects.filter(q_1 & q_2)
+
 
 
 2 etap
