@@ -18,7 +18,7 @@ Tracker.objects.filter(q_1 & q_2)
 q_4 = Q(status__title__iexact='new')
 q_5 = Q(type__title__iexact='bug')
 q_6 = Q(type__title__iexact='enhancement')
-Tracker.objects.filter((q_3 | q_4) & (q_5 | q_6))
+Tracker.objects.filter((q_2 | q_4) & (q_5 | q_6))
 
 
 
