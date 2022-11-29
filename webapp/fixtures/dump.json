@@ -43,70 +43,290 @@
 },
 {
   "model": "webapp.tracker",
-  "pk": 1,
-  "fields": {
-    "summary": "Sdelat 45 wh",
-    "description": "Sdelat 45 hw polnost'u",
-    "status": 2,
-    "type": 2,
-    "created_at": "2022-11-18T11:15:59.364Z",
-    "updated_at": "2022-11-18T11:15:59.364Z"
-  }
-},
-{
-  "model": "webapp.tracker",
   "pk": 2,
   "fields": {
-    "summary": "Sdelat 44 hw",
-    "description": "Sdelat 44 hw polnost'u",
-    "status": 3,
-    "type": 1,
-    "created_at": "2022-11-18T11:16:16.253Z",
-    "updated_at": "2022-11-18T11:16:16.253Z"
+    "summary": "Task 2",
+    "description": "fgfdsavccsvdcasddgfdsfgfdsdsfdgfds",
+    "created_at": "2022-11-21T16:09:23.549Z",
+    "updated_at": "2022-11-28T16:43:56.610Z",
+    "status": [
+      3
+    ],
+    "type": [
+      3
+    ]
   }
 },
 {
   "model": "webapp.tracker",
   "pk": 3,
   "fields": {
-    "summary": "Sdelat 46 hw",
-    "description": "Sdelat 46 hw polnost'u",
-    "status": 1,
-    "type": 3,
-    "created_at": "2022-11-18T11:16:33.984Z",
-    "updated_at": "2022-11-18T11:16:33.984Z"
+    "summary": "Task 333",
+    "description": "qweqeqeeqwsadzxfadssvdsfvdfsavsddssdvsvd",
+    "created_at": "2022-11-21T16:09:32.960Z",
+    "updated_at": "2022-11-28T15:59:32.488Z",
+    "status": [
+      2,
+      3
+    ],
+    "type": [
+      2
+    ]
   }
 },
 {
   "model": "webapp.tracker",
   "pk": 4,
   "fields": {
-    "summary": "Sdelat 47 hw",
-    "description": "Sdelat 47 hw polnost'u + bonus",
-    "status": 3,
-    "type": 2,
-    "created_at": "2022-11-18T11:16:57.833Z",
-    "updated_at": "2022-11-18T11:16:57.833Z"
+    "summary": "Task 4",
+    "description": "aewqeqewqeadsadsaddasadsdadasdsa",
+    "created_at": "2022-11-21T16:09:44.666Z",
+    "updated_at": "2022-11-28T16:01:27.215Z",
+    "status": [
+      2
+    ],
+    "type": [
+      3
+    ]
   }
 },
 {
   "model": "webapp.tracker",
   "pk": 5,
   "fields": {
-    "summary": "Sdelat 48 hw polnost'u",
-    "description": "Sdelat 48 hw polnost'u\r\nSdelat 45 hw polnost'u",
-    "status": 2,
-    "type": 1,
-    "created_at": "2022-11-18T11:17:13.369Z",
-    "updated_at": "2022-11-18T11:17:13.369Z"
+    "summary": "Task 5",
+    "description": "asdasdasd",
+    "created_at": "2022-11-21T16:09:52.117Z",
+    "updated_at": "2022-11-22T12:18:56.508Z",
+    "status": [],
+    "type": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 6,
+  "fields": {
+    "summary": "Task 6",
+    "description": "sdfdmafafssfgfafdsfgfsadgfsfasdgfdgfsdgdsgtwee",
+    "created_at": "2022-11-21T16:43:12.987Z",
+    "updated_at": "2022-11-25T10:29:29.611Z",
+    "status": [
+      3
+    ],
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 7,
+  "fields": {
+    "summary": "sadafaf",
+    "description": "asdadnksjdgnskdgjnskgjnsgkjngksjgnksdgjndkgns",
+    "created_at": "2022-11-21T16:50:59.917Z",
+    "updated_at": "2022-11-28T16:12:31.063Z",
+    "status": [
+      2
+    ],
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 8,
+  "fields": {
+    "summary": "dfsdf",
+    "description": "sdfsffsfsdjfnskgjsdgksdjgksdjgsdkgjdsglskgjs",
+    "created_at": "2022-11-21T17:42:20.877Z",
+    "updated_at": "2022-11-25T10:30:08.842Z",
+    "status": [
+      1
+    ],
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 9,
+  "fields": {
+    "summary": "ssssdfsdfsd",
+    "description": "adasfkndskgkfjkdhnkorqjhir9uhgjiefgjrhuti9efjrguhjifkeijrb",
+    "created_at": "2022-11-21T17:50:37.405Z",
+    "updated_at": "2022-11-25T10:32:44.016Z",
+    "status": [
+      2,
+      3
+    ],
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 10,
+  "fields": {
+    "summary": "3131331313131233",
+    "description": "123asdadsadasdsadasddas",
+    "created_at": "2022-11-21T17:58:36.460Z",
+    "updated_at": "2022-11-28T16:00:08.820Z",
+    "status": [
+      2
+    ],
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 11,
+  "fields": {
+    "summary": "Task 131231",
+    "description": "afasfafasd234141414124211412",
+    "created_at": "2022-11-22T11:14:33.153Z",
+    "updated_at": "2022-11-28T16:00:27.704Z",
+    "status": [
+      1
+    ],
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 12,
+  "fields": {
+    "summary": "caccacs",
+    "description": "acsaqwdqwwqe1142122141424142",
+    "created_at": "2022-11-22T11:17:31.092Z",
+    "updated_at": "2022-11-28T16:00:52.209Z",
+    "status": [
+      2
+    ],
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 13,
+  "fields": {
+    "summary": "2www11",
+    "description": "qsdqdsasdsadadadasdsadaassda",
+    "created_at": "2022-11-22T11:19:25.414Z",
+    "updated_at": "2022-11-28T16:01:43.084Z",
+    "status": [
+      3
+    ],
+    "type": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 14,
+  "fields": {
+    "summary": "23414sfdasfa",
+    "description": "asfsdfaasdadasdadsda",
+    "created_at": "2022-11-22T11:23:26.348Z",
+    "updated_at": "2022-11-28T16:01:58.422Z",
+    "status": [
+      2
+    ],
+    "type": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 15,
+  "fields": {
+    "summary": "asdasdad",
+    "description": "aadsad",
+    "created_at": "2022-11-22T11:27:52.227Z",
+    "updated_at": "2022-11-22T11:27:52.227Z",
+    "status": [],
+    "type": []
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 16,
+  "fields": {
+    "summary": "dfghjk",
+    "description": "dfghjk",
+    "created_at": "2022-11-22T11:29:49.243Z",
+    "updated_at": "2022-11-22T11:29:49.243Z",
+    "status": [],
+    "type": []
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 17,
+  "fields": {
+    "summary": "56r5etwerfdv",
+    "description": "q4rwegsfdwef",
+    "created_at": "2022-11-22T11:31:25.270Z",
+    "updated_at": "2022-11-22T11:31:25.270Z",
+    "status": [],
+    "type": []
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 18,
+  "fields": {
+    "summary": "2436545443yturtgfads",
+    "description": "56uytrgefaeretrrt9i40ritjrhuji93reuhuer9iejrbgjiasda",
+    "created_at": "2022-11-25T10:29:07.207Z",
+    "updated_at": "2022-11-28T16:08:13.986Z",
+    "status": [
+      2
+    ],
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 19,
+  "fields": {
+    "summary": "аппролджлорпмаспр",
+    "description": "4567нг8шщлдьлтоирмпсаппрольasd",
+    "created_at": "2022-11-28T13:23:01.969Z",
+    "updated_at": "2022-11-28T17:05:06.740Z",
+    "status": [
+      3
+    ],
+    "type": [
+      2,
+      3
+    ]
   }
 },
 {
   "model": "auth.user",
   "pk": 1,
   "fields": {
-    "password": "pbkdf2_sha256$390000$v68RzXkbJknvp3iQx33Tcr$m+Zia/12BlNTpomGyigIMa9k8jIJPq7ROI2M6nPLbio=",
-    "last_login": "2022-11-18T11:11:17.072Z",
+    "password": "pbkdf2_sha256$390000$QmVRXyNXNPX19W84vAzPis$PjT0aJLyQ5SyZ2eGboZW5BdhlrKXIHfdFN/dDHZh97g=",
+    "last_login": "2022-11-22T12:05:22.485Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
@@ -114,7 +334,7 @@
     "email": "",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2022-11-18T11:06:21.449Z",
+    "date_joined": "2022-11-21T16:03:26.361Z",
     "groups": [],
     "user_permissions": []
   }

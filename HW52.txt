@@ -1,0 +1,26 @@
+1 etap
+---------------
+
+from datetime import timedelta
+from django.utils import timezone
+
+Tracker.objects.filter(updated_at=timezone.now()-timedelta(days=31))
+
+
+2 etap
+----------------
+
+q_4 = Q(status__title__iexact='new')
+q_5 = Q(type__title__iexact='bug')
+q_6 = Q(type__title__iexact='enhancement')
+Tracker.objects.filter((q_3 | q_4) & (q_5 | q_6))
+
+
+
+3 etap
+-----------------
+
+q_7 = Q(summary__iexact='bug')
+q_8 = Q(type__title__iexact='bug')
+q_9 = Q(status__title__iexact='done')
+Tracker.objects.filter(q_7 | (q_8 & ~q_9))
